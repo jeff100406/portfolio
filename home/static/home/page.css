@@ -1,0 +1,251 @@
+/* =========================================
+   PORTFOLIO INNER PAGES
+   ========================================= */
+
+.portfolio-page {
+    min-height: 100vh;
+    margin: 0;
+    background: #050507;
+    color: #f5f5f5;
+    font-family: "Space Grotesk", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Navigation */
+
+.page-nav {
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 50px;
+}
+
+.page-logo {
+    color: #f5f5f5;
+    text-decoration: none;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.page-logo span {
+    color: #00d9ff;
+}
+
+.back-home {
+    color: #777;
+    text-decoration: none;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #00d9ff;
+}
+
+
+/* Main container */
+
+.page-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(1100px, 90%);
+    margin: 60px auto 100px;
+}
+
+
+/* Heading */
+
+.page-number {
+    color: #00d9ff;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.page-title {
+    margin: 10px 0;
+
+    font-size: clamp(42px, 7vw, 90px);
+    line-height: 0.95;
+
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.page-subtitle {
+    color: #777;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+
+/* Content card */
+
+.content-card {
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+    margin-bottom: 25px;
+}
+
+.content-card h2 {
+    margin-top: 0;
+
+    font-size: 24px;
+}
+
+.content-card p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* Accent */
+
+.accent {
+    color: #00d9ff;
+}
+
+
+/* Lists */
+
+.content-list {
+    list-style: none;
+    padding: 0;
+}
+
+.content-list li {
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    color: #aaa;
+}
+
+.content-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* Grid */
+
+.content-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Skills */
+
+.skill {
+    padding: 15px 20px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 10px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    color: #bbb;
+}
+
+
+/* Profile image */
+
+.profile-image {
+    width: 230px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0,217,255,0.4);
+
+    box-shadow:
+        0 0 40px rgba(0,217,255,0.12);
+}
+
+
+/* Project */
+
+.project-title {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    color: #00d9ff;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 12px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .page-nav {
+        padding: 20px;
+    }
+
+    .page-logo {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .back-home {
+        font-size: 9px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 25px;
+    }
+
+    .page-container {
+        margin-top: 30px;
+    }
+}

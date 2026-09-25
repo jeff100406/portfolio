@@ -1,0 +1,261 @@
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbital 3D Carousel by Tooplate</title>
+
+<!--
+
+    Tooplate 2167 Orbital
+
+    https://www.tooplate.com/view/2167-orbital
+
+    Free HTML CSS Template
+
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'home/tooplate-2167-orbital-style.css' %}">
+</head>
+
+<body class="visuals-on">
+
+<div class="aura"></div>
+<div class="stars"></div>
+
+<nav class="nav">
+  <div class="logo"><a href="#" class="logo">G.JEFF GABRIEL YOWAN <span>//AI&ML</span></a></div>
+  <ul class="nav-links">
+    <li><a href="#system">gabyo894491@gmail.com</a></li>
+    <li><a href="#capabilities">7904811452</a></li>
+    <li><a href="#launch">github</a></li>
+  </ul>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="#system">System</a>
+  <a href="#capabilities">Capabilities</a>
+  <a href="#launch">Launch</a>
+</div>
+
+<header class="hero">
+  <div class="stage">
+    <div class="parallax">
+      <div class="ring-tilt">
+        <div class="ring" id="ring">
+
+          
+
+          <div class="panel" data-url="{% url 'about' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">01</div>
+              <div>
+                <div class="p-label">About me</div>
+                <div class="p-meta">jeff</div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-01.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">01</span>About me</div>
+            </div>
+          </div>
+          
+          <div class="panel" data-url="{% url 'projects' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">02</div>
+              <div>
+                <div class="p-label">Projects</div>
+                <div class="p-meta">AI&ML</div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-02.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">02</span>Projects</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="{% url 'skills' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">03</div>
+              <div>
+                <div class="p-label">Skills</div>
+                <div class="p-meta">tech & soft</div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-03.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">03</span>Skills</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="{% url 'academics' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">04</div>
+              <div>
+                <div class="p-label">qualification</div>
+                <div class="p-meta"></div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-04.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">04</span>qualification</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="{% url 'achievements' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">05</div>
+              <div>
+                <div class="p-label">Achievments</div>
+                <div class="p-meta">cirtificates</div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-05.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">05</span>Achievments</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="{% url 'experience' %}">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">06</div>
+              <div>
+                <div class="p-label">Expierience</div>
+                <div class="p-meta">intern</div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-06.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">06</span>Expierience</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="https://github.com/jeff100406">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">07</div>
+              <div>
+                <div class="p-label">Git-hub</div>
+                <div class="p-meta"></div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-07.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">07</span>Git-hub</div>
+            </div>
+          </div>
+
+          <div class="panel" data-url="https://www.linkedin.com/in/gjeffgabrielyowan">
+            <div class="panel-face panel-face--text">
+              <div class="p-num">08</div>
+              <div>
+                <div class="p-label">Linked-in</div>
+                <div class="p-meta"></div>
+              </div>
+            </div>
+            <div class="panel-face panel-face--image">
+              <img src="{% static 'home/images/image-08.jpg' %}" draggable="false">
+              <div class="panel-scrim"></div>
+              <div class="panel-cap"><span class="p-num">08</span>Linked-in</div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+      <div class="hero-text">
+        <div class="eyebrow">welcome to the world of 
+        </div>
+        <h1>G.JEFF GABRIEL YOWAN</h1>
+        <p>A career built brick by brick </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-controls">
+    <div class="ctrl">
+      <span class="ctrl-label">VISUALS</span>
+      <button class="switch" id="visualsSwitch" role="switch" aria-checked="true" aria-label="Toggle image visuals">
+        <span class="knob"></span>
+      </button>
+    </div>
+    <div class="ctrl">
+      <span class="ctrl-label">ZOOM</span>
+      <button class="switch" id="zoomSwitch" role="switch" aria-checked="false" aria-label="Zoom ring 24 percent larger">
+        <span class="knob"></span>
+      </button>
+    </div>
+    <div class="ctrl">
+      <span class="ctrl-label">SPACING</span>
+      <div class="spacing" role="group" aria-label="Ring spacing">
+        <button class="spacing-step" data-space="0" aria-label="Tight spacing"><i></i></button>
+        <button class="spacing-step is-active" data-space="1" aria-label="Default spacing"><i></i></button>
+        <button class="spacing-step" data-space="2" aria-label="Wide spacing"><i></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>SCROLL</span>
+    <div class="line"></div>
+  </div>
+</header>
+
+<section class="section" id="system">
+  <div class="section-head reveal">
+    <div class="eyebrow">// THE SYSTEM</div>
+    <h2>welcome to the world of JEFF</h2>
+    <p>hi!, welcome , i am going to show you the skills and summary of my proffessional career</p>
+  </div>
+  <div class="features" id="capabilities">
+    <div class="feature reveal">
+      <div class="f-index">01 // career</div>
+      <h3>experiences</h3>
+      <p>as i am still a fresher i have completed two internship one at lifo and another at tvk</p>
+    </div>
+    <div class="feature reveal">
+      <div class="f-index">02 // specilities</div>
+      <h3>language</h3>
+      <p>my real speciality is my language , i can speak upto 5 languages and understand upto 6 languages, which makes me easy to communicate </p>
+    </div>
+    <div class="feature reveal">
+      <div class="f-index">03 // projects</div>
+      <h3>projects</h3>
+      <p>i have completed upto 3 projects now i am currently working on building my tiny gpt</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="launch">
+  <div class="reveal">
+    <h2>Ready to look at my professional career!</h2>
+    <p>if you are intrested in the stuffs like ai,ml & ds you may start exploring my career</p>
+    <a href="#" class="btn">ready</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="logo"><a href="#" class="logo">ORBITAL <span>// 297</span></a></div>
+  <div class="credit">3D Orbital Carousel by <a href="https://www.tooplate.com" rel="nofollow noopener" target="_blank">Tooplate</a></div>
+</footer>
+
+<script src="{% static 'home/tooplate-2167-orbital-script.js' %}"></script>
+
+</body>
+</html>
